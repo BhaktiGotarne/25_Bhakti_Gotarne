@@ -1,0 +1,53 @@
+
+
+Create A Server EJB -> Export to EJB
+-------------------------------------
+1 - Create ejb project 
+2 - Name it ' MsgFromServerEJB '
+3 - Name the following	java package : com.MsgServer
+			class name   : ExampleServer
+4 - Copy the code given. 
+5 - Save and export ejb. Right click on the project, select export to ejb.
+6 - Run server, make sure the ejb is loaded on server.
+
+
+
+Create A Client App That Use Server EJB
+---------------------------------------
+1 - Create a java app named MsgClient.
+2 - Create new plain java file under src. We call it 'ClientApp'.
+3 - Copy the codes given. 
+4 - Import the server ejb and ejb-client that is required. 
+	Steps to add jar file:
+	-> Right click on Project 
+	-> Select buildpath 
+	-> Click libraries tab and add external jar.
+	-> Select ejb-client.jar and ejb-that-we-created.jar
+	-> Location for ejb-client.jar is at server directories 'servername/bin/client/'. 
+5 - And create a regular file with a name 'jboss-ejb-client.properties'. 
+    Copy the content given into the newly created file. 
+6 - Run as java application. BUT make sure the server is UP and MsgServer is loaded.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
